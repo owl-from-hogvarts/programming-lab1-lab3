@@ -1,0 +1,238 @@
+Neznaika: performing movement to location Inclined Ice Tunnel
+Neznaika: Can't use Propeller. Reason:
+Neznaika: air is too sparse
+Neznaika: Can't use Legs. Reason:
+Neznaika: Difficult terrain, impossible to walk
+Neznaika: IceAxes are used
+Neznaika: came to Inclined Ice Tunnel
+Ponchik: performing movement to location Inclined Ice Tunnel
+Ponchik: Can't use Propeller. Reason:
+Ponchik: air is too sparse
+Ponchik: Can't use Legs. Reason:
+Ponchik: Difficult terrain, impossible to walk
+Ponchik: IceAxes are used
+Ponchik: came to Inclined Ice Tunnel
+Znaika: performing movement to location Inclined Ice Tunnel
+Znaika: Can't use Propeller. Reason:
+Znaika: air is too sparse
+Znaika: Can't use Legs. Reason:
+Znaika: Difficult terrain, impossible to walk
+Znaika: IceAxes are used
+Znaika: came to Inclined Ice Tunnel
+Steklyashkin: performing movement to location Inclined Ice Tunnel
+Steklyashkin: Can't use Propeller. Reason:
+Steklyashkin: air is too sparse
+Steklyashkin: Can't use Legs. Reason:
+Steklyashkin: Difficult terrain, impossible to walk
+Steklyashkin: IceAxes are used
+Steklyashkin: came to Inclined Ice Tunnel
+Mushka: performing movement to location Inclined Ice Tunnel
+Mushka: Can't use Propeller. Reason:
+Mushka: air is too sparse
+Mushka: Can't use Legs. Reason:
+Mushka: Difficult terrain, impossible to walk
+Mushka: IceAxes are used
+Mushka: came to Inclined Ice Tunnel
+Neznaika: performing movement to location Icicle Grotto
+Neznaika: Can't use Propeller. Reason:
+Neznaika: air is too sparse
+Neznaika: Using legs
+Neznaika: came to Icicle Grotto
+Ponchik: performing movement to location Icicle Grotto
+Ponchik: Can't use Propeller. Reason:
+Ponchik: air is too sparse
+Ponchik: Using legs
+Ponchik: came to Icicle Grotto
+Znaika: performing movement to location Icicle Grotto
+Znaika: Can't use Propeller. Reason:
+Znaika: air is too sparse
+Znaika: Using legs
+Znaika: came to Icicle Grotto
+Steklyashkin: performing movement to location Icicle Grotto
+Steklyashkin: Can't use Propeller. Reason:
+Steklyashkin: air is too sparse
+Steklyashkin: Using legs
+Steklyashkin: came to Icicle Grotto
+Mushka: performing movement to location Icicle Grotto
+Mushka: Can't use Propeller. Reason:
+Mushka: air is too sparse
+Mushka: Using legs
+Mushka: came to Icicle Grotto
+Neznaika: performing movement to location Cave
+Neznaika: Can't use Propeller. Reason:
+Neznaika: air is too sparse
+Neznaika: Using legs
+Neznaika: came to Cave
+Ponchik: performing movement to location Cave
+Ponchik: Can't use Propeller. Reason:
+Ponchik: air is too sparse
+Ponchik: Using legs
+Ponchik: came to Cave
+Znaika: performing movement to location Cave
+Znaika: Can't use Propeller. Reason:
+Znaika: air is too sparse
+Znaika: Using legs
+Znaika: came to Cave
+Steklyashkin: performing movement to location Cave
+Steklyashkin: Can't use Propeller. Reason:
+Steklyashkin: air is too sparse
+Steklyashkin: Using legs
+Steklyashkin: came to Cave
+Mushka: performing movement to location Cave
+Mushka: Can't use Propeller. Reason:
+Mushka: air is too sparse
+Mushka: Using legs
+Mushka: came to Cave
+Neznaika: performing movement to location Surface
+Neznaika: Can't use Propeller. Reason:
+Neznaika: air is too sparse
+Neznaika: Using legs
+Neznaika: came to Surface
+Ponchik: performing movement to location Surface
+Ponchik: Can't use Propeller. Reason:
+Ponchik: air is too sparse
+Ponchik: Using legs
+Ponchik: came to Surface
+Znaika: performing movement to location Surface
+Znaika: Can't use Propeller. Reason:
+Znaika: air is too sparse
+Znaika: Using legs
+Znaika: came to Surface
+Steklyashkin: performing movement to location Surface
+Steklyashkin: Can't use Propeller. Reason:
+Steklyashkin: air is too sparse
+Steklyashkin: Using legs
+Steklyashkin: came to Surface
+Mushka: performing movement to location Surface
+Mushka: Can't use Propeller. Reason:
+Mushka: air is too sparse
+Mushka: Using legs
+Mushka: came to Surface
+Engineers team: New team with name "Engineers team" was formed
+Engineers team: Members are:Neznaika, Ponchik
+Engineers team: received order to go to Surface
+Neznaika: already in place
+Ponchik: already in place
+Miners team: New team with name "Miners team" was formed
+Miners team: Members are:Znaika, Steklyashkin, Mushka
+Miners team: received order to go to Cave
+Znaika: performing movement to location Cave
+Znaika: Can't use Propeller. Reason:
+Znaika: air is too sparse
+Znaika: Using legs
+Znaika: came to Cave
+Steklyashkin: performing movement to location Cave
+Steklyashkin: Can't use Propeller. Reason:
+Steklyashkin: air is too sparse
+Steklyashkin: Using legs
+Steklyashkin: came to Cave
+Mushka: performing movement to location Cave
+Mushka: Can't use Propeller. Reason:
+Mushka: air is too sparse
+Mushka: Using legs
+Mushka: came to Cave
+Neznaika: Checking rocket systems
+Ponchik: Checking rocket systems
+Miners team: starting mining process
+Miners team: Mining raw resource node Lunit
+Znaika: mined Lunit by amount of 1
+Steklyashkin: mined Lunit by amount of 1
+Mushka: mined Lunit by amount of 1
+Znaika: mined Lunit by amount of 1
+Steklyashkin: mined Lunit by amount of 1
+Mushka: mined Lunit by amount of 1
+Znaika: mined Lunit by amount of 1
+Steklyashkin: mined Lunit by amount of 1
+Mushka: mined Lunit by amount of 1
+Znaika: mined Lunit by amount of 1
+Steklyashkin: mined Lunit by amount of 1
+Mushka: mined Lunit by amount of 1
+Znaika: mined Lunit by amount of 1
+Steklyashkin: mined Lunit by amount of 1
+Mushka: mined Lunit by amount of 1
+Znaika: mined Lunit by amount of 1
+Steklyashkin: mined Lunit by amount of 1
+Mushka: mined Lunit by amount of 1
+Znaika: mined Lunit by amount of 1
+Steklyashkin: mined Lunit by amount of 1
+Mushka: mined Lunit by amount of 1
+Znaika: mined Lunit by amount of 1
+Steklyashkin: mined Lunit by amount of 1
+Mushka: mined Lunit by amount of 1
+Znaika: mined Lunit by amount of 1
+Steklyashkin: mined Lunit by amount of 1
+Mushka: mined Lunit by amount of 1
+Znaika: mined Lunit by amount of 1
+Steklyashkin: mined Lunit by amount of 1
+Mushka: mined Lunit by amount of 1
+Znaika: mined Lunit by amount of 1
+Steklyashkin: mined Lunit by amount of 1
+Mushka: mined Lunit by amount of 1
+Znaika: mined Lunit by amount of 1
+Steklyashkin: mined Lunit by amount of 1
+Mushka: mined Lunit by amount of 1
+Znaika: mined Lunit by amount of 1
+Steklyashkin: mined Lunit by amount of 1
+Mushka: mined Lunit by amount of 1
+Znaika: mined Lunit by amount of 1
+Steklyashkin: mined Lunit by amount of 1
+Mushka: mined Lunit by amount of 1
+Miners team: Mining raw resource node AntiLunit
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+Znaika: mined AntiLunit by amount of 1
+Steklyashkin: mined AntiLunit by amount of 1
+Mushka: mined AntiLunit by amount of 1
+
