@@ -3,6 +3,9 @@
 *.class
 *.jar
 *.pdf
+*.png
+*.jpg
+.directory
 
 .vscode
 build
