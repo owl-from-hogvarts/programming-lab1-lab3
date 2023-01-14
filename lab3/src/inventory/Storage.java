@@ -23,7 +23,7 @@ public class Storage {
   }
 
   public Pile[] getContent() {
-    this.content = filterEmptyPiles(this.content);
+    // this.content = filterEmptyPiles(this.content);
     return content.toArray(new Pile[0]);
   }
 
@@ -41,6 +41,7 @@ public class Storage {
   public Optional<Pile> takeStorable(Predicate<Pile> selector) {
     for (Pile item : content) {
       if (selector.test(item)) {
+        content.remove(item);
         return Optional.of(item);
       }
     }
@@ -48,11 +49,11 @@ public class Storage {
     return Optional.empty();
   }
 
-  private List<Pile> filterEmptyPiles(List<Pile> piles) {
-    ArrayList<Pile> clonedPiles = new ArrayList<>(piles);
-    clonedPiles.removeIf(pile -> pile.getAmount() == 0);
-    return clonedPiles;
-  }
+  // private List<Pile> filterEmptyPiles(List<Pile> piles) {
+  //   ArrayList<Pile> clonedPiles = new ArrayList<>(piles);
+  //   clonedPiles.removeIf(pile -> pile.getAmount() == 0);
+  //   return clonedPiles;
+  // }
 
   private void checkCapacity(Pile ... toAdd) {
     assert this.getAmountOfEmptySlots() > toAdd.length;

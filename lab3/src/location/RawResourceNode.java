@@ -1,17 +1,22 @@
 package location;
+
+import javax.annotation.CheckForNull;
+
 import inventory.Pile;
-import items.base.IStorableItem;
+import inventory.SplitPileError;
 import items.base.Item;
 import items.base.RawResource;
 
 public class RawResourceNode implements Mineable {
   private final int totalCapacity;
+  @CheckForNull
   private Pile resourcePile;
+  private final RawResource resource;
 
   public RawResourceNode(RawResource resource) {
-
+    this.resource = resource;
     this.totalCapacity = computeTotalCapacity(40, Item.defaultMaxStackSize);
-    this.resourcePile = new Pile(resource, this.totalCapacity);
+    this.resourcePile = new Pile(this.resource, this.totalCapacity);
   }
 
   @Override
@@ -21,16 +26,26 @@ public class RawResourceNode implements Mineable {
 
   @Override
   public int getAmountOfResourcesLeft() {
+    if (resourcePile == null) {
+      return 0;
+    }
     return resourcePile.getAmount();
   }
 
   @Override
   public Pile mine() throws OutOfResourcesError {
-    if (resourcePile.getAmount() == 0) {
+    if (resourcePile == null) {
       throw new OutOfResourcesError();
     }
 
-    return resourcePile.split(1);
+    try {
+      return resourcePile.split(1);
+    } catch (SplitPileError e) {
+      final Pile last = this.resourcePile;
+      this.resourcePile = null;
+      
+      return last;
+    }
   }
 
   private int computeTotalCapacity(int min, int max) {
@@ -41,15 +56,13 @@ public class RawResourceNode implements Mineable {
 
   @Override
   public RawResource getResourceType() {
-    IStorableItem item = this.resourcePile.getItem();
-    assert item instanceof RawResource;
-    RawResource rawResource = (RawResource) item;
-    return rawResource;
+
+    return this.resource;
   }
 
   @Override
   public boolean isNotEmpty() {
-    return this.getAmountOfResourcesLeft() > 0;
+    return this.resourcePile != null;
   }
 
   
