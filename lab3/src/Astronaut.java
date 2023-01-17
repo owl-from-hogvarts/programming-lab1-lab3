@@ -108,6 +108,7 @@ public class Astronaut implements ICheckAction, IMineAction, ILazyMineAction {
     List<IMovementAssistant> sortedMovementAssistant = Stream.concat(Arrays.stream(inventory.getContent())
         .map(Pile::getItem)
         .filter(IMovementAssistant.class::isInstance)
+        // .filter((a) -> IMovementAssistant.class.isInstance(a))
         .map(IMovementAssistant.class::cast), Stream.of(legs))
         // .filter((item) -> item.isAbleToWork(location).getPayload())
         .sorted(Comparator.comparing(IMovementAssistant::movementScore))
