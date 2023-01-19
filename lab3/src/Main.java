@@ -17,6 +17,7 @@ import location.Terrain;
 import location.Location.Settings;
 import logger.ILogger;
 import logger.Logger;
+import person.Astronaut;
 
 public class Main {
   private static final List<Pile> defaultEquipment = Main.getDefaultEquipment();

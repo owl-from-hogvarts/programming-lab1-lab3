@@ -29,8 +29,7 @@ public class Pile {
   private IStorableItem item;
 
   public Pile(IStorableItem item, int amount) {
-    checkAmount(amount, item);
-    this.amount = amount;
+    this.setAmount(amount);
     this.item = item;
   }
 
@@ -38,7 +37,7 @@ public class Pile {
     return amount;
   }
 
-  public void setAmount(int amount) {
+  private void setAmount(int amount) {
     checkAmount(amount, item);
     this.amount = amount;
   }

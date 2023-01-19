@@ -1,3 +1,4 @@
+package person;
 import items.IDisplayable;
 import items.base.IMovementAssistant;
 import location.Location;

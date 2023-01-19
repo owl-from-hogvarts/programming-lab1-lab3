@@ -1,3 +1,4 @@
+package person;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -16,36 +17,22 @@ import location.Mineable;
 import logger.ILogger;
 import messages.Message;
 import messages.MessageWithPayload;
+import person.actions.ICheckAction;
+import person.actions.ILazyMineAction;
+import person.actions.IMineAction;
 
-public class Astronaut implements ICheckAction, IMineAction, ILazyMineAction {
-  private String name;
+public class Astronaut extends Person implements ICheckAction, IMineAction, ILazyMineAction {
   private Storage inventory = new Storage();
   private Legs legs = new Legs();
 
-  private final ILogger logger;
-
-  private Location location;
-
   public Astronaut(ILogger logger, String name, Pile[] initialInventoryContent) {
-    this.logger = logger;
+    super(logger, name, ERace.Human);
     setName(name);
     inventory.addStorables(initialInventoryContent);
   }
 
   public Storage getInventory() {
     return inventory;
-  }
-
-  public Location getLocation() {
-    return location;
-  }
-
-  public void setLocation(Location location) {
-    this.location = location;
-  }
-
-  public String getName() {
-    return name;
   }
 
   public void move(Location location, boolean silent) {
@@ -96,10 +83,6 @@ public class Astronaut implements ICheckAction, IMineAction, ILazyMineAction {
     this.addAstronautMessage(new Message("Checking rocket systems"));
   }
 
-  private void setName(String name) {
-    this.name = name;
-  }
-
   private void move(Location location) {
     this.setLocation(location);
   }
@@ -133,7 +116,7 @@ public class Astronaut implements ICheckAction, IMineAction, ILazyMineAction {
   }
 
   private void addAstronautMessage(Message message) {
-    this.logger.add(this, message.setPrefix(name));
+    this.getLogger().add(this, message.setPrefix(this.getName()));
   }
 
   @Override

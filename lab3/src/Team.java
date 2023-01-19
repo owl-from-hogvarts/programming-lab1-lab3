@@ -8,6 +8,8 @@ import location.Location;
 import location.Terrain;
 import logger.ILogger;
 import messages.Message;
+import person.Astronaut;
+import person.actions.ICheckAction;
 
 public class Team implements ICheckAction, IDisplayable {
   private Astronaut[] members;
