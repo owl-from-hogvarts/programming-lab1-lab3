@@ -3,14 +3,14 @@ package person;
 import java.util.Arrays;
 import java.util.List;
 
-import items.IDisplayable;
+import common.IDisplayable;
+import common.Util;
 import location.Location;
 import logger.ILogger;
 import messages.Message;
 import person.emotions.EEmotionalAction;
 import person.emotions.Emotion;
 import person.emotions.EmotionEvent;
-import myUtils.Util;
 
 public class Person implements IDisplayable {
   private final ILogger logger;

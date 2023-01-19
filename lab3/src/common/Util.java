@@ -1,4 +1,4 @@
-package myUtils;
+package common;
 
 import java.util.List;
 

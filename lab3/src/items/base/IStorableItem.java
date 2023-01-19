@@ -1,6 +1,6 @@
 package items.base;
 
-import items.IDisplayable;
+import common.IDisplayable;
 
 public interface IStorableItem extends IDisplayable {
   // String getDisplayedName();

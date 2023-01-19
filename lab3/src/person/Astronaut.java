@@ -8,9 +8,9 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import common.IDisplayable;
 import inventory.Pile;
 import inventory.Storage;
-import items.IDisplayable;
 import items.base.IMovementAssistant;
 import location.Location;
 import location.Mineable;

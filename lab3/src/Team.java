@@ -2,8 +2,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+import common.IDisplayable;
 import inventory.Pile;
-import items.IDisplayable;
 import location.Location;
 import location.Terrain;
 import logger.ILogger;

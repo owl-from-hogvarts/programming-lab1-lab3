@@ -1,6 +1,6 @@
 package location;
 
-import myUtils.Util;
+import common.Util;
 public class Coordinates {
   private int x;
   private int y;

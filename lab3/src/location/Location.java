@@ -3,7 +3,7 @@ package location;
 import java.util.Arrays;
 import java.util.List;
 
-import items.IDisplayable;
+import common.IDisplayable;
 
 public class Location implements IDisplayable{
   public static class Settings {

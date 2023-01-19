@@ -1,5 +1,5 @@
 package person;
-import items.IDisplayable;
+import common.IDisplayable;
 import items.base.IMovementAssistant;
 import location.Location;
 import location.LocationAttribute;

@@ -1,6 +1,6 @@
 package person.emotions;
 
-import items.IDisplayable;
+import common.IDisplayable;
 
 public class EmotionEvent implements IDisplayable {
 
