@@ -1,5 +1,5 @@
 package inventory;
-public class PileAlreadyEmpty extends Error {
+public class PileAlreadyEmpty extends Exception {
 
   @Override
   public String getMessage() {

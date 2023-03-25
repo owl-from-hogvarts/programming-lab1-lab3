@@ -19,7 +19,7 @@ public class Crowd {
 
   }
 
-  void handleEmotionEvent(EmotionEvent event) {
+  public void handleEmotionEvent(EmotionEvent event) {
     Map<EEmotionalAction, List<Person>> actions = new HashMap<>();
 
     // iterate over participants
@@ -35,8 +35,11 @@ public class Crowd {
     for (var key : actions.keySet()) {
       int amount = actions.get(key).size();
 
-      this.logger.add(this, new Message(key.name() + " action was performed " + amount
-          + " of times in response to event " + event.getDisplayedName()));
+      final var message = new Message(key.name() + " action was performed " + amount
+      + " of times in response to event " + event.getDescription());
+      message.setPrefix("Crowd");
+
+      this.logger.add(this, message);
     }
 
   }

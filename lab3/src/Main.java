@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import inventory.Pile;
@@ -18,19 +19,23 @@ import location.Location.Settings;
 import logger.ILogger;
 import logger.Logger;
 import person.Astronaut;
+import person.ERace;
+import person.Person;
+import person.emotions.EmotionEvent;
 
 public class Main {
   private static final List<Pile> defaultEquipment = Main.getDefaultEquipment();
   private static final Location[] LOCATIONS = Main.initLocations();
   private static final ILogger logger = Main.initLogger();
   private static final Astronaut[] ASTRONAUTS = Main.iniAstronauts(Main.logger);
+  private static final Team defaultTeam = new Team(Main.logger, "Default team", ASTRONAUTS, LOCATIONS[0]);
+  private static final Crowd crowd = Main.createMoonwalkingsCrowd();
   // private static int currentLocation = 0;
 
   public static void main(String[] args) {
+    Main.defaultTeam.getEvents().once(EmotionEvent.class, Main.crowd::handleEmotionEvent);
     for (int i = 0; i < LOCATIONS.length; i++) {
-      for (var astro : ASTRONAUTS) {
-        astro.move(LOCATIONS[i], false);
-      }
+      Main.defaultTeam.goTo(LOCATIONS[i]);
     }
 
     List<Astronaut> astronauts = Arrays.asList(ASTRONAUTS);
@@ -59,6 +64,8 @@ public class Main {
 
   private static Location[] initLocations() {
     List<Location> locations = new ArrayList<>();
+
+    locations.add(new Location("Moonwalking's city", new Settings().airDensity(AirDensity.Dense)));
 
     locations.add(new Location("Inclined Ice Tunnel", new Settings()
         .attributes(LocationAttribute.Difficult, LocationAttribute.Ice)
@@ -89,5 +96,23 @@ public class Main {
 
   private static ILogger initLogger() {
     return new Logger();
+  }
+
+  private static Crowd createMoonwalkingsCrowd() {
+    return new Crowd(Main.logger, generateMoonwalkings(50));
+  }
+
+  private static List<Person> generateMoonwalkings(int amount) {
+    final List<Person> moonwalkings = new ArrayList<>();
+    for (var i = 0; i < amount; i++) {
+      moonwalkings.add(new Person(Main.logger, common.Util.getRandomElementOfList(getNamesList()), ERace.MoonWalking));
+    }
+
+    return moonwalkings;
+  }
+
+  private static List<String> getNamesList() {
+    return Arrays.asList("Harry Doom", "Oscar Zorander", "Eric Carolinus", "Hugo Weasley", "Zeddicus Snape",
+        "Bloise Amon", "Prospero Voldemort", "Atlantes Malfoy", "Ron Stibbons");
   }
 }

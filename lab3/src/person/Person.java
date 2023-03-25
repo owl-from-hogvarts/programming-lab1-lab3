@@ -62,10 +62,11 @@ public class Person implements IDisplayable {
   }
 
   protected EEmotionalAction takeAction(EmotionEvent event) {
-    return Util.getRandomElementOfList(getAvailableReactions(event.getEmotion()));
+    return Util.getRandomElementOfList(getAvailableReactions(event.getEmotions()));
   };
 
-  protected List<EEmotionalAction> getAvailableReactions(Emotion emotion) {
+  protected List<EEmotionalAction> getAvailableReactions(List<Emotion> emotions) {
+    final Emotion emotion = Util.getRandomElementOfList(emotions);
     return switch (emotion) {
       case Joy -> Arrays.asList(EEmotionalAction.Scream,
           EEmotionalAction.WaveHands,

@@ -19,7 +19,7 @@ public final class Propeller extends Equipment implements IMovementAssistant {
       return new MessageWithPayload<Boolean>(false, "air is too sparse");
     }
 
-    return new MessageWithPayload<Boolean>(true, "airworthy air");
+    return new MessageWithPayload<Boolean>(true, "airworthy air; using propellers to fly");
   }
 
   @Override

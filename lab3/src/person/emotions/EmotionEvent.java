@@ -1,22 +1,32 @@
 package person.emotions;
 
+import java.util.Arrays;
+import java.util.List;
+
 import common.IDisplayable;
 
 public class EmotionEvent implements IDisplayable {
 
-  private final Emotion emotion;
+  private final List<Emotion> emotions;
+  private final String description;
 
-  public Emotion getEmotion() {
-    return emotion;
+  public List<Emotion> getEmotions() {
+    return emotions;
   }
 
-  EmotionEvent(Emotion emotion) {
-    this.emotion = emotion;
+  public EmotionEvent(String description, Emotion... emotions) {
+    this.description = description;
+    assert emotions.length > 0;
+    this.emotions = Arrays.asList(emotions);
   }
 
   @Override
   public String getDisplayedName() {
-    return this.emotion.name();
+    return this.emotions.get(0).name();
+  }
+
+  public String getDescription() {
+    return this.description;
   }
 
 }

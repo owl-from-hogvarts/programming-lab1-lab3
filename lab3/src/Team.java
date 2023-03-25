@@ -1,7 +1,10 @@
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Consumer;
 
+import common.IEventEmitter;
+import common.EventEmitter;
 import common.IDisplayable;
 import inventory.Pile;
 import location.Location;
@@ -10,12 +13,20 @@ import logger.ILogger;
 import messages.Message;
 import person.Astronaut;
 import person.actions.ICheckAction;
+import person.emotions.Emotion;
+import person.emotions.EmotionEvent;
 
 public class Team implements ICheckAction, IDisplayable {
   private Astronaut[] members;
   private Location location;
   private final ILogger logger;
   private String name;
+  private final EventEmitter<EmotionEvent> events = new EventEmitter<>();
+
+
+  public EventEmitter<EmotionEvent> getEvents() {
+    return events;
+  }
 
   public Team(ILogger logger, String name, Astronaut[] members, Location location) {
     this.logger = logger;
@@ -51,6 +62,7 @@ public class Team implements ICheckAction, IDisplayable {
     for (var astro : this.members) {
       astro.move(location, false);
     }
+    this.getEvents().emit(new EmotionEvent("Astronaut flies", Emotion.Amazement, Emotion.Excitement, Emotion.Joy));
   }
 
   @Override

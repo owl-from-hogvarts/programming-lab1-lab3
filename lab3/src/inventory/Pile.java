@@ -4,7 +4,7 @@ import items.base.IStorableItem;;
 
 public class Pile {
   public Pile split(int amountInSecondPile) throws SplitPileError {
-    if (amountInSecondPile == this.getAmount()) {
+    if (amountInSecondPile > this.getAmount()) {
       throw new SplitPileError();
     }
 
